@@ -7,8 +7,9 @@ import org.junit.Test;
 public class PalavraPrimaTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testConverteLetraAMinusculo() {
+		int valor = PalavraPrima.converteEmNumero("a");
+		assertEquals(1, valor);
 	}
 
 }
