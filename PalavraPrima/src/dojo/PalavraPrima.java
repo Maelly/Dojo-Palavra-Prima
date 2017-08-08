@@ -10,8 +10,10 @@ public class PalavraPrima {
 			return 27;
 		else if (palavra == "z")
 			return 26;
+		else if (palavra == "Z")
+			return 52;
 		return 0;
-		
-	} 
+
+	}
 
 }
