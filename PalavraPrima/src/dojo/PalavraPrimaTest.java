@@ -35,4 +35,10 @@ public class PalavraPrimaTest {
 		int valor = PalavraPrima.converteEmNumero("Z");
 		assertEquals(52, valor);
 	}
+	
+	@Test
+	public void test2EhNumeroPrimo() {
+		boolean resultadoTeste = PalavraPrima.ehPrimo(2);
+		assertEquals(true, resultadoTeste);
+	}
 }

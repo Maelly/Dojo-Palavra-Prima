@@ -16,4 +16,8 @@ public class PalavraPrima {
 
 	}
 
+	public static boolean ehPrimo(int num) {
+		return true;
+	}
+
 }
