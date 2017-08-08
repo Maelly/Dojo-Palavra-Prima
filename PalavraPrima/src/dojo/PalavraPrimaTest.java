@@ -41,4 +41,10 @@ public class PalavraPrimaTest {
 		boolean resultadoTeste = PalavraPrima.ehPrimo(2);
 		assertEquals(true, resultadoTeste);
 	}
+	@Test
+	public void test26EhNumeroPrimo() {
+		boolean resultadoTeste = PalavraPrima.ehPrimo(26);
+		assertEquals(false, resultadoTeste);
+	}
 }
+

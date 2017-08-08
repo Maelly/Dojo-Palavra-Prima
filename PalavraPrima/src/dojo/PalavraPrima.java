@@ -17,6 +17,8 @@ public class PalavraPrima {
 	}
 
 	public static boolean ehPrimo(int num) {
+		if (num % 2 == 0 && num != 2)
+			return false;
 		return true;
 	}
 
