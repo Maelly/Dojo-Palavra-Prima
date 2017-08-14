@@ -4,6 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Coding Dojo utilizando o problema Palavras-Primas
+ * 
+ * Fonte: Marianna Reis. Palavras Primas. DojoPuzzles.com 
+ * [http://dojopuzzles.com/problemas/exibe/palavras-primas/]
+ * 
+ */
 public class PalavraPrimaTest {
 
 	@Test
@@ -44,7 +51,7 @@ public class PalavraPrimaTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testConverteLetraInvalida() {
-		int valor = PalavraPrima.converteEmNumero("Ç");
+		PalavraPrima.converteEmNumero("Ç");
 	}
 
 	@Test

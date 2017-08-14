@@ -12,7 +12,7 @@ public class PalavraPrima {
 				valorNumerico -= 96;
 			}
 			else {
-				throw new IllegalArgumentException("Tá cagado, Caracter Inválida");
+				throw new IllegalArgumentException("Caractere invalido");
 			}
 			acumulador += valorNumerico; 
 		}
