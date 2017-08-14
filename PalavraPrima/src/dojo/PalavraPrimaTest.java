@@ -17,7 +17,7 @@ public class PalavraPrimaTest {
 		int valor = PalavraPrima.converteEmNumero("b");
 		assertEquals(2, valor);
 	}
-	
+
 	@Test
 	public void testConverteLetraCMinusculo() {
 		int valor = PalavraPrima.converteEmNumero("c");
@@ -41,27 +41,36 @@ public class PalavraPrimaTest {
 		int valor = PalavraPrima.converteEmNumero("Z");
 		assertEquals(52, valor);
 	}
-	@Test (expected = IllegalArgumentException.class)
+
+	@Test(expected = IllegalArgumentException.class)
 	public void testConverteLetraInvalida() {
 		int valor = PalavraPrima.converteEmNumero("Ç");
 	}
-	
+
 	@Test
 	public void test2EhNumeroPrimo() {
 		boolean resultadoTeste = PalavraPrima.ehPrimo(2);
 		assertEquals(true, resultadoTeste);
 	}
+
 	@Test
 	public void test26EhNumeroPrimo() {
 		boolean resultadoTeste = PalavraPrima.ehPrimo(26);
 		assertEquals(false, resultadoTeste);
 	}
+
 	@Test
 	public void test1NaoEhNumeroPrimo() {
 		boolean resultadoTeste = PalavraPrima.ehPrimo(1);
 		assertEquals(false, resultadoTeste);
-		
-	}
-	
-}
 
+	}
+
+	@Test
+	public void testConverteTextoAAMinusculo() {
+		int valor = PalavraPrima.converteEmNumero("aa");
+		assertEquals(2, valor);
+
+	}
+
+}

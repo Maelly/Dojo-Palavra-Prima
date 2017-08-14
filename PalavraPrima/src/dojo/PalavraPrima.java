@@ -3,6 +3,7 @@ package dojo;
 public class PalavraPrima {
 	public static int converteEmNumero(String palavra) {
 		int valorNumerico = 0;
+		int acumulador = 0;
 		for (int i = 0; i < palavra.length(); i++) {
 			valorNumerico = palavra.charAt(i);
 			if (valorNumerico <= 90 && valorNumerico >= 65) {
@@ -13,13 +14,14 @@ public class PalavraPrima {
 			else {
 				throw new IllegalArgumentException("Tá cagado, Caracter Inválida");
 			}
+			acumulador += valorNumerico; 
 		}
 		/*
 		 * if (palavra == "a") return 1; else if (palavra == "b") return 2; else
 		 * if (palavra == "A") return 27; else if (palavra == "z") return 26;
 		 * else if (palavra == "Z") return 52;
 		 */
-		return valorNumerico;
+		return acumulador;
 
 	}
 
