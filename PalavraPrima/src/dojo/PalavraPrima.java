@@ -10,11 +10,10 @@ public class PalavraPrima {
 				valorNumerico -= 38;
 			} else if (valorNumerico <= 122 && valorNumerico >= 97) {
 				valorNumerico -= 96;
-			}
-			else {
+			} else {
 				throw new IllegalArgumentException("Caractere invalido");
 			}
-			acumulador += valorNumerico; 
+			acumulador += valorNumerico;
 		}
 		/*
 		 * if (palavra == "a") return 1; else if (palavra == "b") return 2; else
@@ -28,8 +27,13 @@ public class PalavraPrima {
 	public static boolean ehPrimo(int num) {
 		if (num == 1)
 			return false;
-		if (num % 2 == 0 && num != 2)
-			return false;
+		/*
+		 * if (num % 2 == 0 && num != 2) return false;
+		 */
+		for (int i = 2; i > 1 && i < num; i++) {
+			if (num % i == 0)
+				return false;
+		}
 		return true;
 	}
 

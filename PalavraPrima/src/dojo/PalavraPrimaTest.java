@@ -59,10 +59,25 @@ public class PalavraPrimaTest {
 		boolean resultadoTeste = PalavraPrima.ehPrimo(2);
 		assertEquals(true, resultadoTeste);
 	}
+	@Test
+	public void test11EhNumeroPrimo() {
+		boolean resultadoTeste = PalavraPrima.ehPrimo(11);
+		assertEquals(true, resultadoTeste);
+	}
+	@Test
+	public void test15EhNumeroPrimo() {
+		boolean resultadoTeste = PalavraPrima.ehPrimo(15);
+		assertEquals(false, resultadoTeste);
+	}
 
 	@Test
 	public void test26EhNumeroPrimo() {
 		boolean resultadoTeste = PalavraPrima.ehPrimo(26);
+		assertEquals(false, resultadoTeste);
+	}
+	@Test
+	public void test14EhNumeroPrimo() {
+		boolean resultadoTeste = PalavraPrima.ehPrimo(14);
 		assertEquals(false, resultadoTeste);
 	}
 
@@ -84,5 +99,6 @@ public class PalavraPrimaTest {
 		int valor = PalavraPrima.converteEmNumero("Maria");
 		assertEquals(39+1+18+9+1, valor);
 	}
+	
 
 }
