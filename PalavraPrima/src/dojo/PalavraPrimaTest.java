@@ -99,6 +99,29 @@ public class PalavraPrimaTest {
 		int valor = PalavraPrima.converteEmNumero("Maria");
 		assertEquals(39+1+18+9+1, valor);
 	}
-	
+	@Test
+	public void testPalavraComidaEhPrima() {
+		boolean resultadoTeste = PalavraPrima.ehPalavraPrima("Comida");//29+15+13+9+4+1 = 71 que é primo
+		assertEquals(true, resultadoTeste);
+		
+	}
+	@Test
+	public void testPalavraBolaEhPrima() {
+		boolean resultadoTeste = PalavraPrima.ehPalavraPrima("Bola");//28+15+12+1= 56 que não é primo
+		assertEquals(false, resultadoTeste);
+		
+	}
+	@Test
+	public void testPalavraAMinusculoEhPrima() {
+		boolean resultadoTeste = PalavraPrima.ehPalavraPrima("a");
+		assertEquals(false, resultadoTeste);
+		
+	}
+	@Test
+	public void testPalavraEMinusculoEhPrima() {
+		boolean resultadoTeste = PalavraPrima.ehPalavraPrima("e");
+		assertEquals(true, resultadoTeste);
+		
+	}
 
 }

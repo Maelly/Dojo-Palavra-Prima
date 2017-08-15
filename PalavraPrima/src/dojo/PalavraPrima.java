@@ -37,4 +37,10 @@ public class PalavraPrima {
 		return true;
 	}
 
+	public static boolean ehPalavraPrima(String palavra) {
+		int valorNumerico = PalavraPrima.converteEmNumero(palavra);
+		boolean resultadoTeste = PalavraPrima.ehPrimo(valorNumerico);
+		return resultadoTeste;
+	}
+
 }
