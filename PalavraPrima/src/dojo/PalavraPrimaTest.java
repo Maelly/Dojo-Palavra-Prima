@@ -79,5 +79,10 @@ public class PalavraPrimaTest {
 		assertEquals(2, valor);
 
 	}
+	@Test
+	public void testNome() {
+		int valor = PalavraPrima.converteEmNumero("Maria");
+		assertEquals(39+1+18+9+1, valor);
+	}
 
 }
